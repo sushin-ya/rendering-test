@@ -6,7 +6,7 @@ type Props = {
   text: string;
 };
 
-const Home: NextPage<Props> = ({ text }) => {
+const About: NextPage<Props> = ({ text }) => {
   const [text2] = useState<string>('This is text2.');
   const [text3, setText3] = useState<string>('');
 
@@ -18,10 +18,12 @@ const Home: NextPage<Props> = ({ text }) => {
 
   return (
     <div>
-      <h2>{text}</h2>
-      <h2>{text2}</h2>
-      <h2>{text3}</h2>
-      <button onClick={() => router.push('/about')}>about</button>
+      <ul>
+        <li>{text}</li>
+        <li>{text2}</li>
+        <li>{text3}</li>
+      </ul>
+      <button onClick={() => router.push('/')}>home</button>
     </div>
   );
 };
@@ -34,4 +36,4 @@ export const getServerSideProps = () => {
   };
 };
 
-export default Home;
+export default About;
