@@ -5,7 +5,7 @@ exports.id = 405;
 exports.ids = [405];
 exports.modules = {
 
-/***/ 75:
+/***/ 5075:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -15,9 +15,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(853);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1853);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(689);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6689);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 
 
@@ -53,6 +53,13 @@ const Home = ({ text  })=>{
                     display: "block"
                 },
                 children: "other"
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                onClick: ()=>router.push("/another"),
+                style: {
+                    display: "block"
+                },
+                children: "another"
             })
         ]
     });
@@ -69,14 +76,14 @@ const getServerSideProps = ()=>{
 
 /***/ }),
 
-/***/ 853:
+/***/ 1853:
 /***/ ((module) => {
 
 module.exports = require("next/router");
 
 /***/ }),
 
-/***/ 689:
+/***/ 6689:
 /***/ ((module) => {
 
 module.exports = require("react");
@@ -97,7 +104,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(75));
+var __webpack_exports__ = (__webpack_exec__(5075));
 module.exports = __webpack_exports__;
 
 })();
