@@ -33,6 +33,12 @@ const Home: NextPage<Props> = ({ text }) => {
       >
         other
       </button>
+      <button
+        onClick={() => router.push('/another')}
+        style={{ display: 'block' }}
+      >
+        another
+      </button>
     </div>
   );
 };
