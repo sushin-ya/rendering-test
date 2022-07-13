@@ -42,7 +42,17 @@ const Home = ({ text  })=>{
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
                 onClick: ()=>router.push("/about"),
+                style: {
+                    display: "block"
+                },
                 children: "about"
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
+                onClick: ()=>router.push("/other"),
+                style: {
+                    display: "block"
+                },
+                children: "other"
             })
         ]
     });

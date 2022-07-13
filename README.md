@@ -1,34 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 内部リンクで遷移したとき、何が起こっているか？
 
-## Getting Started
+- [getServerSideProps](https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props)
 
-First, run the development server:
+> When you request this page on client-side page transitions through next/link or next/router, Next.js sends an API request to the server, which runs getServerSideProps
+> getServerSideProps returns JSON which will be used to render the page.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+> next/link または next/router を介したクライアント側のページ遷移でこのページをリクエストすると、Next.js は getServerSideProps を実行するサーバーに API リクエストを送信します
+> getServerSideProps は、ページのレンダリングに使用される JSON を返します
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Automatic Static Optimization](https://nextjs.org/docs/advanced-features/automatic-static-optimization)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+> If getServerSideProps or getInitialProps is present in a page, Next.js will switch to render the page on-demand, per-request (meaning Server-Side Rendering).
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+> getServerSideProps または getInitialProps がページに存在する場合、Next.js は、要求ごとにオンデマンドでページをレンダリングするように切り替わります（サーバー側のレンダリングを意味します）。
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+↓ の文章は何を言っているのかよくわからない
 
-## Learn More
+> During prerendering, the router's query object will be empty since we do not have query information to provide during this phase. After hydration, Next.js will trigger an update to your application to provide the route parameters in the query object.
 
-To learn more about Next.js, take a look at the following resources:
+> 事前レンダリング中、このフェーズで提供するクエリ情報がないため、ルーターのクエリオブジェクトは空になります。ハイドレーション後、Next.js はアプリケーションの更新をトリガーして、クエリオブジェクトにルートパラメーターを提供します。
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+SSG 判定されると html が生成され、SSR 判定されると js が生成される

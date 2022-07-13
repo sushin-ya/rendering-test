@@ -21,7 +21,18 @@ const Home: NextPage<Props> = ({ text }) => {
       <h2>{text}</h2>
       <h2>{text2}</h2>
       <h2>{text3}</h2>
-      <button onClick={() => router.push('/about')}>about</button>
+      <button
+        onClick={() => router.push('/about')}
+        style={{ display: 'block' }}
+      >
+        about
+      </button>
+      <button
+        onClick={() => router.push('/other')}
+        style={{ display: 'block' }}
+      >
+        other
+      </button>
     </div>
   );
 };
