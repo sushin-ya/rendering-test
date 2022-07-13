@@ -31,10 +31,12 @@ SSG 判定されると html が生成され、SSR 判定されると js が生�
 さらに SSR だと、props の json も一緒に返る
 
 - SSR の場合
-  <img width="426" alt="スクリーンショット 2022-07-13 22 40 11" src="https://user-images.githubusercontent.com/69495387/178747690-c3b5758b-e8ef-4e99-bbb5-08060f78410c.png">
+
+<img width="426" alt="スクリーンショット 2022-07-13 22 40 11" src="https://user-images.githubusercontent.com/69495387/178747690-c3b5758b-e8ef-4e99-bbb5-08060f78410c.png">
 
 - SSG の場合
-  <img width="426" alt="スクリーンショット 2022-07-13 22 40 19" src="https://user-images.githubusercontent.com/69495387/178747697-8afcf9a9-f6a3-44a2-8fd6-98e2e2a11a58.png">
+
+<img width="426" alt="スクリーンショット 2022-07-13 22 40 19" src="https://user-images.githubusercontent.com/69495387/178747697-8afcf9a9-f6a3-44a2-8fd6-98e2e2a11a58.png">
 
 Create React App との違いは、もととなる空の div タグを持った index.html がない...
 仮想 DOM はどうやって実体を持つ？？？
