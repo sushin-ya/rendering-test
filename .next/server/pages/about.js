@@ -54,7 +54,7 @@ const About = ({ text  })=>{
 const getServerSideProps = ()=>{
     return {
         props: {
-            text: "This is text."
+            text: "This is about text."
         }
     };
 };

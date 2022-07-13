@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 
 const About: NextPage = () => {
-  const [text2] = useState<string>('This is text2.');
+  const [text2] = useState<string>('This is another text2.');
   const [text3, setText3] = useState<string>('');
 
   const router = useRouter();

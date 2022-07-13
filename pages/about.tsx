@@ -31,7 +31,7 @@ const About: NextPage<Props> = ({ text }) => {
 export const getServerSideProps = () => {
   return {
     props: {
-      text: 'This is text.',
+      text: 'This is about text.',
     },
   };
 };
